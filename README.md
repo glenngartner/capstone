@@ -1,4 +1,4 @@
-# aurelia-skeleton-navigation (typescript)
+# Game Motivator
 
 ## Running The App
 

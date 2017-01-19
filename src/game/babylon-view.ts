@@ -1,4 +1,4 @@
-import * as BABYLON from 'BABYLON';
+import * as BABYLON from "BABYLON";
 import {Camera} from './objects/Camera';
 import {Light} from './objects/Light';
 import {GameBoard} from './objects/GameBoard';
@@ -37,15 +37,20 @@ export class BabylonView {
     let light = new Light('hemiLight1', scene);
 
     // create a simple starting sphere
-    let sphere = new BABYLON.Mesh.CreateSphere('sphere1', 16, 2, scene);
-    sphere.position.y = 2;
+    let sphere = new BABYLON.Mesh.CreateSphere('sphere1', 16, 1, scene);
+    sphere.position = new BABYLON.Vector3(-6, 1, 2);
+    sphere.material = new BABYLON.PBRMaterial('sphereMat', scene);
+    sphere.material.albedoColor = new BABYLON.Color3(1, 0, 0);
+    sphere.material.reflectivityColor = new BABYLON.Color3(.2, .2, .2);
+    sphere.material.reflectionColor = new BABYLON.Color3(.75, .75, .75);
+    sphere.material.microSurface = 0.75;
 
     // add a ground plane
     // let ground = new BABYLON.Mesh.CreateGround('ground1', 4, 0, 4, scene);
     let board = new GameBoard('gameBoard', 8, 16, scene);
-    let mat = new Material('planeMat', '#FF0000', .5, scene);
-    mat.albedoColor = BABYLON.Color3.Red();
-    board.mesh.material = mat;
+    // let mat = new Material('planeMat', '#FF0000', .5, scene);
+    // mat.albedoColor = BABYLON.Color3.Red();
+    // board.mesh.material = mat;
     // board.mesh.material.albedoColor = BABYLON.Color3.Red();
 
     return scene;

@@ -29,7 +29,8 @@
     "node_modules",
     "jspm_packages",
     "dist",
-    "build"
+    "build",
+    "test"
   ],
   "atom": {
     "rewriteTsconfig": false
