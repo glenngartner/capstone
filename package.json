@@ -63,7 +63,7 @@
   },
   "jspm": {
     "dependencies": {
-      "BABYLON": "github:BabylonJS/Babylon.js@^2.5.0%2Fdist",
+      "BABYLON": "npm:babylonjs@^2.5.0",
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0",
