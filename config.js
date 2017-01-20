@@ -14,7 +14,7 @@ System.config({
     }
   },
   map: {
-    "BABYLON": "github:BabylonJS/Babylon.js@2.5.0/dist/babylon.2.5.js",
+    "BABYLON": "github:BabylonJS/Babylon.js@2.5.0",
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.1",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.1",
